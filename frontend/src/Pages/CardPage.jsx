@@ -30,6 +30,13 @@ const CardPage = () => {
   return (
     <>
       <div className={containerClass}>
+        <div className="logo-container">
+          <h1 className="logo-text">
+            <span className="logo-the">The</span>
+            <span className="logo-residents">Residents</span>
+            <span className="logo-books">Books</span>
+          </h1>
+        </div>
         <div className="header">
           <h1 className="title">Profiles</h1>
           <button
