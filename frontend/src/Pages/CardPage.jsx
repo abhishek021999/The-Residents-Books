@@ -10,7 +10,7 @@ const CardPage = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const res = await fetch('http://localhost:8080/api/profile/get');
+      const res = await fetch('https://the-residents-books-1.onrender.com/api/profile/get');
       const json = await res.json();
       setData(json.allProfiles);
     } catch (error) {

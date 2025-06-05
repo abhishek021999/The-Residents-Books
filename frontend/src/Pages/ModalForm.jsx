@@ -52,7 +52,7 @@ const ProfileForm = ({ onClose, onSuccess }) => {
         data.append('Profileimg', photoFile);
       }
 
-      const response = await fetch('http://localhost:8080/api/profile/add', {
+      const response = await fetch('https://the-residents-books-1.onrender.com/api/profile/add', {
         method: 'POST',
         body: data
       });
