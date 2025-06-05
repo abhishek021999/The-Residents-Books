@@ -1,0 +1,183 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+ 
+  min-height: 100vh;
+  padding: 24px 0; 
+}
+
+.container {
+  max-width: 1200px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Your existing styles follow */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.add-button {
+  padding: 8px 16px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.add-new-button {
+  padding: 6px 12px;         
+  font-size: 0.875rem;       
+  border-radius: 6px;        
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.card-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-role {
+  color: #6b7280;
+  margin: 8px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover svg {
+  transform: scale(1.1);
+}
+
+.linkedin-icon:hover {
+  background-color: #e8f0fe;
+}
+
+.twitter-icon:hover {
+  background-color: #e8f5fe;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.linkedin-icon {
+  color: #0a66c2;
+}
+
+.twitter-icon {
+  color: #1da1f2;
+}
+
+
+.add-new-button {
+  padding: 6px 12px;         
+  font-size: 0.875rem;       
+  border-radius: 6px;        
+  width: 100px;              
+  max-width: 100px;          
+  box-sizing: border-box;    
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  gap: 16px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f4f6;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+  color: #6b7280;
+  font-size: 1rem;
+  margin: 0;
+}
