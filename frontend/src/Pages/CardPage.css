@@ -116,6 +116,11 @@ body {
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
+    padding: 0 16px;
+  }
+
+  .logo-container {
+    padding: 0 16px;
   }
 
   .logo-text {
@@ -151,6 +156,7 @@ body {
   .card-image {
     height: 180px;
   }
+
 }
 
 .card {
