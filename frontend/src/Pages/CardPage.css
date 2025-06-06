@@ -14,7 +14,6 @@ body {
 }
 
 .container {
-  /* max-width: 1200px; */
   width: 100%;
   margin: 0 auto;
   padding: 24px;
@@ -24,6 +23,9 @@ body {
   width: 100%;
   box-sizing: border-box;
   transition: filter 0.3s ease;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container.blurred {
@@ -37,11 +39,10 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
-  /* border: 1px solid red; */
   margin-top: -20px;
+  background-color: #fff;
+  z-index: 10;
 }
-
-
 
 .title {
   font-size: 2rem;
@@ -59,7 +60,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-
 .add-new-button {
   padding: 6px 12px;         
   font-size: 0.875rem;       
@@ -76,6 +76,14 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 1;
+}
+
+.grid::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
@@ -160,7 +168,6 @@ body {
   color: #1da1f2;
 }
 
-
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -192,9 +199,9 @@ body {
 
 .logo-container {
   text-align: center;
-  padding:  0;
-  /* margin-bottom: 1rem; */
-  /* border: 1px solid red; */
+  padding: 0;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .logo-text {
