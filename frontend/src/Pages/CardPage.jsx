@@ -45,7 +45,7 @@ const CardPage = () => {
             onMouseEnter={(e) => (e.target.style.backgroundColor = '#1e40af')}
             onMouseLeave={(e) => (e.target.style.backgroundColor = '#2563eb')}
           >
-            + Add New
+            Add Resident
           </button>
         </div>
 

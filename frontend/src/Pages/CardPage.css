@@ -23,6 +23,12 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   width: 100%;
   box-sizing: border-box;
+  transition: filter 0.3s ease;
+}
+
+.container.blurred {
+  filter: blur(4px);
+  pointer-events: none;
 }
 
 /* Your existing styles follow */
@@ -31,6 +37,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
+  /* border: 1px solid red; */
+  margin-top: -20px;
 }
 
 
@@ -56,6 +64,12 @@ body {
   padding: 6px 12px;         
   font-size: 0.875rem;       
   border-radius: 6px;        
+  width: 120px;              
+  max-width: 120px;          
+  box-sizing: border-box;    
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .grid {
@@ -147,15 +161,6 @@ body {
 }
 
 
-.add-new-button {
-  padding: 6px 12px;         
-  font-size: 0.875rem;       
-  border-radius: 6px;        
-  width: 100px;              
-  max-width: 100px;          
-  box-sizing: border-box;    
-}
-
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -187,8 +192,9 @@ body {
 
 .logo-container {
   text-align: center;
-  padding: 2rem 0;
-  margin-bottom: 1rem;
+  padding:  0;
+  /* margin-bottom: 1rem; */
+  /* border: 1px solid red; */
 }
 
 .logo-text {
